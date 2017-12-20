@@ -17,11 +17,10 @@ public class MyMethodVisitor extends AdviceAdapter implements Opcodes{
 
     @Override
     public void visitMethodInsn(int opcode, String owner, String name, String desc, boolean itf){
-        logger.log(Level.ALL, "Teste den Logger mit opcode {0}", opcode);
-        System.out.println("owner: " + owner);
-        mv.visitFieldInsn(GETSTATIC, "java/lang/System", "err", "Ljava/io/PrintStream;");
-        mv.visitLdcInsn("CALL " + name);
-        mv.visitMethodInsn(INVOKEVIRTUAL, "java/io/PrintStream", "println", "(Ljava/lang/String;)V", false);
+        logger.log(Level.INFO, "Besuche " + owner +"."+name, opcode);
+        /*mv.visitFieldInsn(GETSTATIC, "java/lang/System", "err", "Ljava/io/PrintStream;");
+        mv.visitLdcInsn("CALL " + name);*/
+        //mv.visitMethodInsn(INVOKEVIRTUAL, "java/io/PrintStream", "println", "(Ljava/lang/String;)V", false);
         super.visitMethodInsn(opcode, owner, name, desc,itf);
     }
 }
