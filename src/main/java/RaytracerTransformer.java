@@ -28,4 +28,3 @@ public class RaytracerTransformer implements ClassFileTransformer {
     }
 }
 
-//Filter auf klasse raytracer setzen; hashmap wo aufgerufene methoden drin sind; try finally; nanotime; benchmarkprogramm;invokevirtual???
