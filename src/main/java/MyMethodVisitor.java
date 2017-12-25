@@ -37,6 +37,6 @@ public class MyMethodVisitor extends AdviceAdapter implements Opcodes{
     @Override
     protected void onMethodExit(int opcode){
         Statistics.visitedMethod(name, System.nanoTime() - time);
-        System.out.println("visited " + name +" which dauerte: " + (System.nanoTime() - time));
+        System.out.println("visited " + name +" which took: " + (System.nanoTime() - time) + " nanoseconds");
     }
 }

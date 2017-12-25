@@ -40,7 +40,7 @@ public final class Statistics {
             }
             bufferedWriter.write("----------------------------------------------------------------------------------------------------------------------------------");
             bufferedWriter.newLine();
-            bufferedWriter.write("Average Runtime (ALL Methods): " + nanoSecondsToSeconds(totalRuntime)/(double)totalCalls);
+            bufferedWriter.write("Average Runtime (ALL Methods, in seconds): " + nanoSecondsToSeconds(totalRuntime)/(double)totalCalls);
         } catch (IOException e) {
             e.printStackTrace();
         }
