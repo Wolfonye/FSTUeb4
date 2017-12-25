@@ -1,3 +1,5 @@
+//Philipp Bous - 912590
+
 import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.commons.AdviceAdapter;
@@ -7,9 +9,6 @@ import java.util.HashMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- * Created by bous on 12.12.17.
- */
 public class MyMethodVisitor extends AdviceAdapter implements Opcodes{
     String name;
     Logger logger;

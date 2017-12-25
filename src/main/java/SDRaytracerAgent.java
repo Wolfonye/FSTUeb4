@@ -1,6 +1,5 @@
-/**
- * Created by bous on 12.12.17.
- */
+//Philipp Bous - 912590
+
 import java.lang.instrument.Instrumentation;
 public class SDRaytracerAgent {
     public static void premain(String agentArgs, Instrumentation inst) {

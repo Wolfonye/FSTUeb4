@@ -1,10 +1,9 @@
+//Philipp Bous - 912590
+
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;
 
-/**
- * Created by bous on 12.12.17.
- */
 public class ProfilingClassVisitor extends ClassVisitor implements Opcodes{
     private static final int API_VERSION =ASM5;
     ProfilingClassVisitor(ClassVisitor cv){
